@@ -1,7 +1,7 @@
 
 
 function fetchAndInsertFooter() {
-    fetch('footercontent.html')
+    fetch('./footercontent.html')
         .then(resp => {
             if (!resp.ok) {
                 throw new Error('Network response was not ok');

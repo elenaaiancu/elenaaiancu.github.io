@@ -77,7 +77,7 @@ function fetchAndInsertMenu() {
 
 
   function fetchAndInsertMenu() {
-    fetch('menu.html')
+    fetch('./menu.html')
         .then(resp => {
             if (!resp.ok) {
                 throw new Error('Network response was not ok');
