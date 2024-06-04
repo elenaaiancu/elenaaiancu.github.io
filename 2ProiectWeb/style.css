@@ -1,0 +1,210 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif, 'times-new-roman';
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #df1919;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  #pic1pg1 {
+    max-width: 100%;
+    height: auto; /* Full viewport height */
+    
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    position: absolute; /* Poziționăm imaginea absolut */
+  top: 100px;
+  left: 0;
+  z-index: -1;
+    
+  }
+  
+  h1 {
+    text-align: center;
+    color: #df1919;
+    animation: colorChange 5s infinite;
+  }
+  
+  @keyframes colorChange {
+    0% { color: #4b9620; }
+    25% { color: #ff401e; }
+    50% { color: #32cdbe; }
+    75% { color: #00c3ff; }
+    100% { color: #df1919; }
+  }
+  
+  h2 {
+    margin-left: 30px;
+    color: #444;
+  }
+  
+  p, ul {
+    margin-left: 30px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  h2::before {
+    content: '🌍';
+    margin-right: 10px;
+    color: #1e90ff;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+  
+  .contentHP {
+    text-indent: 30px;
+  }
+  
+  .menu {
+    background-color: #12c3ae;
+    border-bottom: 1px solid #df1919;
+    padding: 10px 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid #df1919;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .menu ul li {
+    margin: 5px 10px;
+  }
+  
+  .menu ul li a {
+    color: #df1919;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .menu ul li input {
+    padding: 5px;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #df1919;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .menu ul li input {
+        width: 100%;
+    }
+
+    #pic1pg1 {
+        position: relative;
+        top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu ul {
+        padding: 10px;
+    }
+
+    .menu ul li {
+        margin: 5px 0;
+    }
+
+    .menu ul li a {
+        padding: 10px 20px;
+    }
+
+    .menu ul li input {
+        padding: 10px;
+    }
+
+    #pic1pg1 {
+        top: 350px;
+    }
+}
+
+
+#footer {
+    background-color: #12c3ae;
+    padding: 50px;
+    text-align: center ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: rgb(13, 4, 4);
+    border: 1px solid #df1919;
+  }
+  #menuContent {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Asigură poziționarea relativă pentru a folosi poziționarea absolută */
+}
+
+#contentSearch {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px); /* Se va poziționa sub input și va lăsa un spațiu de 10px */
+    right: 0;
+    width: 300px; /* Ajustează dimensiunea la nevoie */
+    background-color: #f4f4f9; /* Schimbă culoarea de fundal la cea dorită */
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Stilizare pentru conținut */
+#contentSearch h2 {
+    color: #df1919; /* Culoare pentru titlu */
+}
+
+#contentSearch p {
+    color: #444; /* Culoare pentru text */
+}
+
+#contentSearch img {
+    max-width: 100px; /* Lățime maximă pentru imagine */
+    height: auto; /* Înălțime automată */
+}
+
+#countrySearch {
+    margin-bottom: 10px; /* Adaugă spațiu între input și conținutul căutării */
+}
