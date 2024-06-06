@@ -19,11 +19,11 @@ body {
 
   #pic1pg1 {
     max-width: 100%;
-    height: auto; /* Full viewport height */
+    height: auto; 
     
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
-    position: absolute; /* Poziționăm imaginea absolut */
+    background-size: cover; 
+    background-position: center; 
+    position: absolute; 
   top: 100px;
   left: 0;
   z-index: -1;
@@ -161,50 +161,50 @@ body {
     }
 
     #pic1pg1 {
-        top: 350px;
+        top: 250px;
     }
 }
 
 
 #footer {
     background-color: #12c3ae;
-    padding: 50px;
+    padding: 10px;
     text-align: center ;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    color: rgb(13, 4, 4);
+    color:red;
     border: 1px solid #df1919;
   }
   #menuContent {
     display: flex;
     flex-direction: column;
-    position: relative; /* Asigură poziționarea relativă pentru a folosi poziționarea absolută */
+    position: relative; 
 }
 
 #contentSearch {
     display: none;
     position: absolute;
-    top: calc(100% + 10px); /* Se va poziționa sub input și va lăsa un spațiu de 10px */
+    top: calc(100% + 10px); 
     right: 0;
-    width: 300px; /* Ajustează dimensiunea la nevoie */
-    background-color: #f4f4f9; /* Schimbă culoarea de fundal la cea dorită */
+    width: 300px; 
+    background-color: #f4f4f9; 
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* Stilizare pentru conținut */
+
 #contentSearch h2 {
-    color: #df1919; /* Culoare pentru titlu */
+    color: #df1919; 
 }
 
 #contentSearch p {
-    color: #444; /* Culoare pentru text */
+    color: #444; 
 }
 
 #contentSearch img {
-    max-width: 100px; /* Lățime maximă pentru imagine */
-    height: auto; /* Înălțime automată */
+    max-width: 100px; 
+    height: auto; 
 }
 
 #countrySearch {
-    margin-bottom: 10px; /* Adaugă spațiu între input și conținutul căutării */
+    margin-bottom: 10px; 
 }

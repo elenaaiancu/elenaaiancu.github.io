@@ -69,13 +69,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function displayFavorites() {
-        favoriteList.innerHTML = ""; // Șterge conținutul anterior al listei de favorite
+        favoriteList.innerHTML = ""; 
         let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
         
-        console.log("Favorites:", favorites); // Adaugă acest log pentru a vedea dacă sunt favorite
+        console.log("Favorites:", favorites); 
 
         favorites.forEach(countryName => {
-            const favoriteItem = document.createElement("div"); // Folosim `div` în loc de `ul`
+            const favoriteItem = document.createElement("div"); 
             favoriteItem.textContent = countryName;
             favoriteList.appendChild(favoriteItem);
         });
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
     toggleFavoritesButton.addEventListener("click", function() {
         console.log("Toggle button clicked");
         if (favoritesContainer.classList.contains("hidden")) {
-            displayFavorites(); // Actualizează lista de favorite când este afișată
+            displayFavorites(); 
             favoritesContainer.classList.remove("hidden");
             toggleFavoritesButton.textContent = "Hide Favorites";
         } else {
